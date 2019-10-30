@@ -30,11 +30,11 @@ body {
   width: 25px;
   height: 25px;
   left: 20px;
-  top: 20px;
+  top: 15px;
 }
 
 .bm-burger-bars {
-  background: #373a47;
+  background: white;
 }
 
 .bm-cross-button {

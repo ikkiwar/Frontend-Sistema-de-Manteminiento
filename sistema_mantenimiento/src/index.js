@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Sidebar from './components/side-bar'
+import Topbar from './components/Topbar';
 
 
 const contenedor = document.getElementById("root")
 ReactDOM.render(
-<Sidebar/>, contenedor
+<Topbar/>, contenedor
 )
 
