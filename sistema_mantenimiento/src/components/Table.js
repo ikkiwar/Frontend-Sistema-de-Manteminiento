@@ -26,11 +26,23 @@ class Table extends React.Component {
         const columns = [
             {
                 Header: "User ID",
-                accessor: "userId"
+                accessor: "userId",
+                style: {
+                    textAlign: "center"
+                },
+                width: 100,
+                maxWidth: 100,
+                minWidth: 100
             },
             {
                 Header: "ID",
-                accessor: "id"
+                accessor: "id",
+                style: {
+                    textAlign: "center"
+                },
+                width: 100,
+                maxWidth: 100,
+                minWidth: 100
             },
             {
                 Header: "Title",
@@ -39,6 +51,23 @@ class Table extends React.Component {
             {
                 Header: "Body",
                 accessor: "body"
+            },
+            {
+                Header: "Acciones",
+                Cell: props => {
+                    return (
+                        <button className="detalle">Detalle</button>
+                    
+                    )
+                },
+                width: 100,
+                maxWidth: 100,
+                minWidth: 100,
+                filterable: false,
+                sortable: false,
+                style: {
+                    textAlign: "center"
+                }
             }
 
         ]
@@ -46,6 +75,9 @@ class Table extends React.Component {
             <div className="table">   <ReactTable
                 columns={columns}
                 data={this.state.posts}
+                filterable
+                noDataText={"Datos No encontrados"}
+                defaultPageSize={10}
             />
 
             </div>
