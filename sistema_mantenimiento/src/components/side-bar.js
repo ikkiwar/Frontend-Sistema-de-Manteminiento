@@ -1,5 +1,5 @@
 import React from 'react';
-import { bubble as Menu } from 'react-burger-menu';
+import { slide as Menu } from 'react-burger-menu';
 import Casa from '../images/casa.png';
 import Orden from '../images/orden.png';
 import Invent from '../images/editar.png'

@@ -2,6 +2,7 @@ import React from 'react';
 import ReactTable from 'react-table';
 import 'react-table/react-table.css'
 import './styles/table.css'
+import Api from '../Api'
 
 class Table extends React.Component {
 
@@ -14,8 +15,7 @@ class Table extends React.Component {
     }
 
     componentDidMount() {
-        const url = "https://jsonplaceholder.typicode.com/posts";
-        fetch(url, {
+        fetch(`${Api}${this.props.entidad}`, {
             method: "GET"
         }).then(Response => Response.json()).then(posts => {
             this.setState({ posts: posts })
@@ -23,57 +23,10 @@ class Table extends React.Component {
     }
 
     render() {
-        const columns = [
-            {
-                Header: "User ID",
-                accessor: "userId",
-                style: {
-                    textAlign: "center"
-                },
-                width: 100,
-                maxWidth: 100,
-                minWidth: 100
-            },
-            {
-                Header: "ID",
-                accessor: "id",
-                style: {
-                    textAlign: "center"
-                },
-                width: 100,
-                maxWidth: 100,
-                minWidth: 100
-            },
-            {
-                Header: "Title",
-                accessor: "title"
-            },
-            {
-                Header: "Body",
-                accessor: "body"
-            },
-            {
-                Header: "Acciones",
-                Cell: props => {
-                    return (
-                        <button className="detalle">Detalle</button>
-                    
-                    )
-                },
-                width: 100,
-                maxWidth: 100,
-                minWidth: 100,
-                filterable: false,
-                sortable: false,
-                style: {
-                    textAlign: "center"
-                }
-            }
-
-        ]
+       
         return (
             <div className="table">   <ReactTable
-                columns={columns}
+                columns={this.props.columnas}
                 data={this.state.posts}
                 filterable
                 noDataText={"Datos No encontrados"}
