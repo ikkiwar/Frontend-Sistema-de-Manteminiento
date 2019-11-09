@@ -6,7 +6,7 @@ import Api from '../Api'
 
 class Table extends React.Component {
 
-    constructor(props) {
+    constructor(props) { // contructor para poder pasarle las props a nuestro Componente
         super(props);
         this.state = {
             posts: []
@@ -14,15 +14,15 @@ class Table extends React.Component {
 
     }
 
-    componentDidMount() {
-        fetch(`${Api}${this.props.entidad}`, {
+    componentDidMount() { // este es un estado del ciclo de via de React se ejecuta cuando se carga la pagina
+        fetch(`${Api}${this.props.entidad}`, {  // aqui le pasamos el URL y la entidad que vamos a comsumir
             method: "GET"
         }).then(Response => Response.json()).then(posts => {
             this.setState({ posts: posts })
         })
     }
 
-    render() {
+    render() { // aqui es donde esta nuestro componente tabla 
        
         return (
             <div className="table">   <ReactTable
