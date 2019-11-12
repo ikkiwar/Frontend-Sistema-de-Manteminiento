@@ -6,7 +6,7 @@ import Inicio from './pages/Inicio';
 const contenedor = document.getElementById("root")
 
 ReactDOM.render(
-    <Inicio/> // se esta renderizando directamente una pagina 
+    <Inicio/> // se esta renderizando directamente una pagina . commit de prueba 
     , contenedor
 )
 
