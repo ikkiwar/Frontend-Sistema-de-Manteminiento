@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Inicio from './pages/Inicio';
+import App from './components/App'
 
 
 const contenedor = document.getElementById("root")
 
 ReactDOM.render(
-    <Inicio/> // se esta renderizando directamente una pagina . commit de prueba 
+    <App/> // se esta renderizando directamente una pagina . commit de prueba 
     , contenedor
 )
 
