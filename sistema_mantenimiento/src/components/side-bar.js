@@ -23,7 +23,7 @@ render(){
           <img src={Invent}/> &nbsp; Inventario
         </a>
         <hr/>
-        <a className="menu-item" href="#">
+        <a className="menu-item" href="/RecursoHumano">
           <img src={Humano}/> &nbsp; Recurso Humano
         </a>
         <hr/>

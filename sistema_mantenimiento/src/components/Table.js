@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactTable from 'react-table';
-import 'react-table/react-table.css'
-import './styles/table.css'
-import Api from '../Api'
+import 'react-table/react-table.css';
+import './styles/table.css';
+import Api from '../Api';
+
 
 class Table extends React.Component {
 
@@ -23,15 +24,21 @@ class Table extends React.Component {
     }
 
     render() { // aqui es donde esta nuestro componente tabla 
-       
+
         return (
-            <div className="table">   <ReactTable
-                columns={this.props.columnas}
-                data={this.state.posts}
-                filterable
-                noDataText={"Datos No encontrados"}
-                defaultPageSize={10}
-            />
+            <div className="table">
+                <h2 className="tablatitulo">{this.props.title}</h2>
+                <a href={this.props.enlace} className="boton">
+                    <img src={this.props.icono} /> {this.props.titulo}
+                </a>
+                <ReactTable
+                    columns={this.props.columnas}
+                    data={this.state.posts}
+                    filterable
+                    noDataText={"Datos No encontrados"}
+                    defaultPageSize={10}
+                    className="datos"
+                />
 
             </div>
 
