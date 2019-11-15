@@ -1,31 +1,46 @@
 #uno {
-padding: 10px;
-margin-left: 40px;
-margin-top: 40px;
-
-float: left;
+    padding: 10px;
+    margin-left: 40px;
+    margin-top: 40px;
+    float: left;
 }
 
-#dos{
- padding: 10px;
- margin-top: 40px;
- float: left;
+#dos {
+    padding: 10px;
+    margin-top: 40px;
+    float: left;
 }
 
-#tres{
+#tres {
     padding: 10px;
     margin: 40px;
     float: left;
-   }
+}
 
-#cuatro{
+#cuatro {
     padding: 10px;
     margin: 40px;
     float: left;
-   }
+}
 
-#cinco{
+#cinco {
     padding: 10px;
     margin: 40px;
     float: left;
-   }
+}
+
+.notfound {
+    width: 70%;
+    height: 80%;
+}
+
+.titulo {
+position: absolute;
+width: 100%;
+padding-top: 50px;
+}
+
+.texto{
+    margin-left: 50px;
+    font-family: Arial;
+}

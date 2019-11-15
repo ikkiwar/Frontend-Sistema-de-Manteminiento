@@ -1,11 +1,12 @@
-import React from 'react';
+import React from 'react'
 import Topbar from '../components/Topbar';
 import Table from '../components/Table';
 import Titulo from '../components/Titulo';
-import Home from '../images/casa.png';
-import Orden from '../images/expediente.png';
-class Inicio extends React.Component{
-    // esta es una pagina esa contiene todos los componentes que va contener la pagina de inicio
+import Usuario from '../images/usuario.png';
+import Tecnico from '../images/empleado.png'
+
+class RecursoHumano extends React.Component{
+
 
 render(){
     const columnas = [
@@ -20,34 +21,38 @@ render(){
             minWidth: 100
         },
         {
-            Header: "Encargado",
+            Header: "Nombre",
             accessor: "nombre",
             style: {
                 textAlign: "center"
             }
         },
         {
-            Header: "Estado",
+            Header: "Apellido",
             accessor: "apellido",
             style: {
                 textAlign: "center"
             }
-           
+
         },
         {
-            Header: "Fecha de Generacion",
+            Header: "Telefono",
             accessor: "telefono",
             style: {
                 textAlign: "center"
             }
         },
         {
+            Header: "Cargo",
+            accessor: "observaciones"
+        },
+        {
             Header: "Acciones",
             Cell: props => {
-            
+
                 return (
                     <button className="detalle">Detalle</button>
-    
+
                 )
             },
             width: 100,
@@ -59,19 +64,21 @@ render(){
                 textAlign: "center"
             }
         }
-    
-    ]
 
-    return(<div>
+    ]
+    return(
+        <div>
         <Topbar />
-        <div><Titulo titulo="Inicio" icono={Home} />
-        </div>
-        <Table entidad="/ordentrabajo" columnas = {columnas} title="Ordenes de Trabajo Activas"
-        icono={Orden} titulo="Nueva Orden" enlace="/OrdenTrabajo "
+        <Titulo titulo="Recurso Humano" icono={Usuario} />
+        <Table entidad="/Recursohumano" columnas = {columnas} title="Tecnicos"
+        icono={Tecnico} titulo="Nuevo Tecnico "
+        enlace ="#"
         />
         
-    </div>)
-}
+    </div>
+    )
 }
 
-export default Inicio
+
+}
+ export default RecursoHumano

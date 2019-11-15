@@ -1,13 +1,39 @@
 .table{
     position: relative;
-    top: 90px;
+    top: 150px;
     width: 80%;
     left: 90px;
+    font-family: Arial;
+    
     }
 
     .detalle{
      background-color: #5DE271;
      border: 1px groove;
      color: white;
+    
+    }
+
+    .tablatitulo{
+        position: absolute;
+        
+       margin-top: 0px;
+       
+    }
+
+    .datos{
+        top: 50px;
+       
+    }
+
+    .boton{
+        position: absolute;
+        left: 85%;
+        background-color: cornflowerblue;
+        color: white;
+        padding: 2px;
+        outline: none;
+        border-radius: 15px;
+        
     
     }

@@ -11,11 +11,11 @@ class Sidebar extends React.Component{
 render(){
 
     return(<Menu>
-        <a className="menu-item" href="/" >
+        <a className="menu-item" href="/Inicio" >
          <img src={Casa}/> &nbsp; Inicio 
         </a>
         <hr/>
-        <a className="menu-item" href="#">
+        <a className="menu-item" href="/OrdenTrabajo">
         <img src={Orden}/> Ordenes de Mantenimiento
         </a>
         <hr/>
@@ -23,7 +23,7 @@ render(){
           <img src={Invent}/> &nbsp; Inventario
         </a>
         <hr/>
-        <a className="menu-item" href="#">
+        <a className="menu-item" href="/RecursoHumano">
           <img src={Humano}/> &nbsp; Recurso Humano
         </a>
         <hr/>
