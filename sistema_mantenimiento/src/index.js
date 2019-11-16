@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
+
 import "bootstrap/dist/css/bootstrap.css";
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Inicio from './pages/Inicio';
-import Inventario from './pages/Inventario';
-import Orden from './pages/orden';
+//import Inicio from './pages/Inicio';
+//import Inventario from './pages/Inventario';
+//import Orden from './pages/orden';
 
 
 const contenedor = document.getElementById("root");
