@@ -72,7 +72,7 @@ render(){
         <Titulo titulo="Recurso Humano" icono={Usuario} />
         <Table entidad="/Recursohumano" columnas = {columnas} title="Tecnicos"
         icono={Tecnico} titulo="Nuevo Tecnico "
-        enlace ="#"
+        enlace ="/NuevoRecurso"
         />
         
     </div>

@@ -5,7 +5,8 @@ import Orden from '../pages/orden';
 import NotFound from '../components/NotFound';
 import Recurso from '../pages/RecursoHumano';
 import Calendario from "../pages/Calendario";
-import 'bootstrap/dist/css/bootstrap.css';
+import NuevoRecurso from '../pages/NuevoRecurso';
+
 function App() {
 
     return (
@@ -16,6 +17,7 @@ function App() {
                 <Route exact path="/OrdenTrabajo" component={Orden} />
                 <Route exact path="/RecursoHumano" component={Recurso}/>
                 <Route exact path="/Calendario" component={Calendario}/>
+                <Route exact path="/NuevoRecurso" component={NuevoRecurso}/>
                 <Route component={NotFound} />
             </Switch>
 
