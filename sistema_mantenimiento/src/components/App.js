@@ -5,7 +5,6 @@ import Orden from '../pages/orden';
 import NotFound from '../components/NotFound';
 import Recurso from '../pages/RecursoHumano';
 import Calendario from "../pages/Calendario";
-import 'bootstrap/dist/css/bootstrap.css';
 function App() {
 
     return (
