@@ -1,15 +1,14 @@
 import 'primereact/resources/themes/nova-light/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
-import '../components/styles/estilos.css';
-import React, {Component} from 'react';
+import  React from 'react';
 import {InputText} from 'primereact/inputtext';
 import {Calendar} from 'primereact/calendar';
 import {RadioButton} from 'primereact/radiobutton';
 import {InputTextarea} from 'primereact/inputtextarea';
 import Topbar from '../components/Topbar';
 
-export class Orden extends Component {
+class Orden extends React.Component {
      
     //constructor para los imput text
     constructor() {
