@@ -15,11 +15,11 @@ render(){
          <img src={Casa}/> &nbsp; Inicio 
         </a>
         <hr/>
-        <a className="menu-item" href="/OrdenTrabajo">
-        <img src={Orden}/> Ordenes de Mantenimiento
+        <a className="menu-item" href="Orden">
+        <img src={Orden}/> &nbsp; Ordenes de Mantenimiento
         </a>
         <hr/>
-        <a className="menu-item" href="#">
+        <a className="menu-item" href="Inventario">
           <img src={Invent}/> &nbsp; Inventario
         </a>
         <hr/>
