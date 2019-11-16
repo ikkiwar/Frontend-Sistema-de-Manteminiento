@@ -98,13 +98,11 @@ class Orden extends React.Component {
         };
         
         return (
-            //
-            <div>
-
-                   
-            
-                   <div> <Topbar />
-                    <br></br></div>
+            <div> <Topbar /> <br></br>
+                    
+            <div style={{ overflow: "hidden", marginLeft: "20%", marginRight: "20%", border: "solid #0a0a0a 5px",
+  
+                    boxShadow: "8px 8px 10px 0px #818181", marginTop: "5%", borderRadius: "10px 10px 10px 10px", marginBottom:"30px"}}>
             
                     <h1 style={{textAlign:"center"}}>Solicitud de Orden de Trabajo</h1>
                  
@@ -153,12 +151,12 @@ class Orden extends React.Component {
                         </div>
                         </div>
 
-                        <div style={{padding: "10px", marginLeft: "30px", margintop: "20px", float: "left"}}>                        
+                        <div style={{padding: "10px", marginLeft: "20px", margintop: "20px", float: "left"}}>                        
                          <h3>Causa de Falla</h3>
                          <InputTextarea rows={5} cols={30} autoResize={true}></InputTextarea>
                         </div>
                     
-                        <div style={{padding: "10px", marginLeft: "50px", margintop: "20px", float: "left"}}>
+                        <div style={{padding: "10px", marginLeft: "30px", margintop: "20px", float: "left"}}>
                         <h3>Descripcion del Problema</h3>
                         <InputTextarea rows={5} cols={30} autoResize={true}></InputTextarea>
                         </div>
@@ -171,7 +169,7 @@ class Orden extends React.Component {
                         </span>
                         </div>
 
-                        <div style={{padding: "10px", marginLeft: "30px", margintop: "20px", float:"left"}}>  
+                        <div style={{padding: "10px", marginLeft: "50px", margintop: "50px", float:"left", marginRight:"50px"}}>  
                          <h3>Trabajador asignado</h3>
                         <span className="p-float-label">
                             <InputText id="float-input" type="text" size="30" value={this.state.value2} onChange={(e) => this.setState({value2: e.target.value})} />
@@ -180,14 +178,14 @@ class Orden extends React.Component {
                         </div>
                         
                         
-                        <div style={{float:"left", padding: "10px", marginLeft: "30px", margintop: "10px"}}>
-                        <Button label="Guardar" icon="pi pi-check"/>
-                        <Button label="Cancelar" icon="pi pi-times" className="p-button-secondary"/>
+                        <div style={{float:"right", padding: "10px", marginLeft: "30px", margintop: "30px" , textAlign:"end"}}>
+                        <Button label="Guardar" icon="pi pi-check" className="p-button-success"/>
+                        <Button label="Cancelar" icon="pi pi-times" className="p-button-danger"/>
                     
                         </div>
-                        
-                        </div>
-             
+                   </div>     
+            </div>
+           
                 
         )
     }
