@@ -15,7 +15,7 @@ render(){
          <img src={Casa}/> &nbsp; Inicio 
         </a>
         <hr/>
-        <a className="menu-item" href="/Orden">
+        <a className="menu-item" href="/OrdenTrabajo">
         <img src={Orden}/> &nbsp; Ordenes de Mantenimiento
         </a>
         <hr/>
