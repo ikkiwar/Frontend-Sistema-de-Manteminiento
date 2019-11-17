@@ -1,8 +1,7 @@
-.table{
+.tabla{
     position: relative;
     top: 150px;
-    width: 80%;
-    left: 90px;
+left: 10%;
     font-family: Arial;
     
     }
@@ -23,14 +22,16 @@
 
     .datos{
         top: 50px;
+        width: 80%;
        
     }
 
     .boton{
         position: absolute;
-        left: 85%;
+        left: 72%;
         background-color: cornflowerblue;
         color: white;
+        font-size: 12px;
         padding: 2px;
         outline: none;
         border-radius: 15px;

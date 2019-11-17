@@ -1,13 +1,14 @@
 import React from 'react';
 import FormularioR from '../components/FormularioR';
+import Topbar from '../components/Topbar';
 
 class NuevoRecurso extends React.Component {
 
     render() {
         return (
-            <div> 
-                <FormularioR/>
-
+            <div>
+                <Topbar />
+                <FormularioR />
             </div>
 
 

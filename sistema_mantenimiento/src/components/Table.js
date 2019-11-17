@@ -31,7 +31,7 @@ class Table extends React.Component {
     // aqui es donde esta nuestro componente tabla
     console.log(this.state.posts);
     return (
-      <div className="table">
+      <div className="tabla">
         <h2 className="tablatitulo">{this.props.title}</h2>
         <a href={this.props.enlace} className="boton">
           <img src={this.props.icono} /> {this.props.titulo}

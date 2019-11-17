@@ -62,7 +62,7 @@ class RecursoHumano extends React.Component {
       <div>
         <Topbar />
         <Titulo titulo="Recurso Humano" icono={Usuario} />
-        <Table entidad="/Recursohumano" columnas = {columnas} title="Tecnicos"
+        <Table entidad="/recursoHumano" columnas = {columnas} title="Tecnicos"
         icono={Tecnico} titulo="Nuevo Tecnico "
         enlace ="/NuevoRecurso"
         />

@@ -1,0 +1,19 @@
+
+
+.formulario{
+   
+ border: solid black;
+ width: 50%;
+}
+
+.formu{
+    
+    min-height: 100vh;
+}
+
+.campos{
+    text-align: center;
+    width: 50%;
+    left: 20px;
+}
+

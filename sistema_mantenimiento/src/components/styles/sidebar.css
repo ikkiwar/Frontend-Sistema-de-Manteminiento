@@ -63,3 +63,14 @@ body {
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
+
+hr{
+  background-color: white;
+}
+
+.menu-item{
+text-align: start;
+font-size: 14px;
+}
+
+
