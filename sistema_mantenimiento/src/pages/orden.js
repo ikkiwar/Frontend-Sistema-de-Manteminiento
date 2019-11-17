@@ -146,7 +146,7 @@ class Orden extends React.Component {
                         </div>
                         <div className="p-col-12">
                             <RadioButton inputId="rb2" name="tipo2" value="Emergencia" onChange={(e) => this.setState({tipo: e.value})} checked={this.state.tipo === 'Emergencia'} />
-                            <label htmlFor="rb2" className="p-radiobutton-label">Emergencia</label>
+                            <label htmlFor="rb2" className="p-radiobutton-label">Correctiva</label>
                         </div> 
                         </div>
                         </div>
