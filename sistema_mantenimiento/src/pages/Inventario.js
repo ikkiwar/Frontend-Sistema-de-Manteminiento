@@ -1,6 +1,8 @@
 import React from 'react';
 import Topbar from '../components/Topbar';
 import Table from '../components/Table';
+import Titulo from '../components/Titulo'
+
 
 class Inventario extends React.Component{
 
@@ -50,7 +52,8 @@ class Inventario extends React.Component{
         ]
 
         return(<div><Topbar />
-            <Table entidad="/materialesinsumos" columnas = {columnas}/>
+        <Titulo titulo="Inventario"/>
+            <Table  title="Inventario" entidad="/materialesinsumos" columnas = {columnas}/>
         </div>)
 }
 }
