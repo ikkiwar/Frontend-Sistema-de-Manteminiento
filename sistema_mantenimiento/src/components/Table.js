@@ -22,13 +22,7 @@ class Table extends React.Component {
       .then(Response => Response.json())
       .then(posts => {
         this.setState({
-          posts: posts.map(p => ({
-            recursosHumanos: p.idRecursoHumano,
-            estados: p.idEstado,
-            ordenes: p.idOrdenTrabajo,
-            ordenesfecha: p.fechaGeneracion,
-            mantenimientos: p.idTipoMantenimiento
-          }))
+          posts: posts
         });
       });
   }
@@ -47,7 +41,7 @@ class Table extends React.Component {
           data={this.state.posts}
           filterable
           noDataText={"Datos No encontrados"}
-          defaultPageSize={10}
+          defaultPageSize={5}
           className="datos"
         />
       </div>

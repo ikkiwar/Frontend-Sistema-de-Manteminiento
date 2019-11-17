@@ -11,7 +11,7 @@ class Inicio extends React.Component {
     const columnas = [
       {
         Header: "Id",
-        accessor: "ordenes",
+        accessor: "0",
         style: {
           textAlign: "center"
         },
@@ -20,29 +20,29 @@ class Inicio extends React.Component {
         minWidth: 100
       },
       {
+        Header: "Fecha",
+        accessor: "1",
+        style: {
+          textAlign: "center"
+        }
+      },
+      {
         Header: "Encargado",
-        accessor: "recursosHumanos.nombre",
-        style: {
-          textAlign: "center"
-        }
-      },
-      {
-        Header: "Estado",
-        accessor: "estados.estado",
-        style: {
-          textAlign: "center"
-        }
-      },
-      {
-        Header: "Fecha de Generacion",
-        accessor: "ordenesfecha",
+        accessor: "2",
         style: {
           textAlign: "center"
         }
       },
       {
         Header: "Mantenimiento",
-        accessor: "mantenimientos.mantenimiento",
+        accessor: "3",
+        style: {
+          textAlign: "center"
+        }
+      },
+      {
+        Header: "Estado",
+        accessor: "5",
         style: {
           textAlign: "center"
         }
@@ -70,7 +70,7 @@ class Inicio extends React.Component {
           <Titulo titulo="Inicio" icono={Home} />
         </div>
         <Table
-          entidad="/ordentrabajo"
+          entidad="/ordentrabajo/1"
           columnas={columnas}
           title="Ordenes de Trabajo Activas"
           icono={Orden}
