@@ -1,7 +1,8 @@
 import React from 'react';
 import Sidebar from './side-bar';
 import './styles/topbar.css';
-import Ues from '../images/ues.png'
+import Ues from '../images/ues.png';
+import { Link } from 'react-router-dom';
 
 
 class Topbar extends React.Component {
@@ -11,7 +12,8 @@ class Topbar extends React.Component {
             <div className="top-bar">
                 <Sidebar />
                 <div className="top-bar-letter"> <img src={Ues} className="icono" />
-                    Sistema de Mantenimiento</div>
+                    Sistema de Mantenimiento 
+                    </div>
 
             </div>
 

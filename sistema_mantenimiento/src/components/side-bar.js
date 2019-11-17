@@ -6,30 +6,31 @@ import Invent from '../images/editar.png'
 import Humano from '../images/usuario.png';
 import Ajustes from '../images/ajustes.png';
 import './styles/sidebar.css';
+import { Link } from 'react-router-dom';
 
 class Sidebar extends React.Component{
 render(){
 
     return(<Menu>
-        <a className="menu-item" href="/Inicio" >
+        <Link className="menu-item" to="/Inicio" >
          <img src={Casa}/> &nbsp; Inicio 
-        </a>
+        </Link>
         <hr/>
-        <a className="menu-item" href="/OrdenTrabajo">
-        <img src={Orden}/> Ordenes de Mantenimiento
-        </a>
+        <Link className="menu-item" to="/OrdenTrabajo">
+        <img src={Orden}/> &nbsp; Historial de Mantenimiento
+        </Link>
         <hr/>
-        <a className="menu-item" href="#">
+        <Link className="menu-item" to="/Inventario">
           <img src={Invent}/> &nbsp; Inventario
-        </a>
+        </Link>
         <hr/>
-        <a className="menu-item" href="/RecursoHumano">
+        <Link className="menu-item" to="/RecursoHumano">
           <img src={Humano}/> &nbsp; Recurso Humano
-        </a>
+        </Link>
         <hr/>
-        <a className="menu-item" href="#">
+        <Link className="menu-item" to="#">
           <img src={Ajustes}/> &nbsp; Ajustes
-        </a>
+        </Link>
         <hr/>
         
       </Menu>
