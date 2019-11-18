@@ -115,31 +115,39 @@ class Orden extends React.Component {
                             <label htmlFor="float-input">id solitud</label>
                         </span></div>
 
-                        <div style={{padding: "10px", marginLeft: "40px", margintop: "20px", float: "left"}}>
-                        <h3>Persona que solicita</h3>
-                        <span className="p-float-label">
-                            <InputText id="float-input" type="text" size="50" value={this.state.value2} onChange={(e) => this.setState({value2: e.target.value})} />
-                            <label htmlFor="float-input">nombre</label>
-                        </span></div> 
-
-                           <div style={{padding: "10px", marginLeft: "40px", margintop: "20px", float: "left"}} className="p-col-12 p-md-4">
+                        <div style={{padding: "10px", marginLeft: "40px", margintop: "40px", float: "left"}} className="p-col-12 p-md-4">
                             <h3>Fecha de Solicitud</h3>
                             <Calendar value={this.state.date2} onChange={(e) => this.setState({date2: e.value})} locale={es} dateFormat="dd/mm/yy" showIcon={true}/>
                            </div>
 
-                        <div style={{padding: "10px", marginLeft: "50px", margintop: "40px", float: "left"}} className="p-col-12 p-md-4">
+                        <div style={{padding: "10px", marginLeft: "50px", margintop: "20px", float: "left"}}>
+                        <h3>Procedimiento</h3>
+                        <span className="p-float-label">
+                            <InputText id="float-input" type="text" size="30" value={this.state.value2} onChange={(e) => this.setState({value2: e.target.value})} />
+                            <label htmlFor="float-input">Procedimiento</label>
+                        </span></div> 
+            
+                        <div style={{padding: "10px", marginLeft: "40px", margintop: "20px", float: "left"}}>
+                        <h3>Estado</h3>
+                        <span className="p-float-label">
+                            <InputText id="float-input" type="text" size="30" value={this.state.value2} onChange={(e) => this.setState({value2: e.target.value})} />
+                            <label htmlFor="float-input">Estado</label>
+                        </span></div> 
+                           
+
+                        {/* <div style={{padding: "10px", marginLeft: "50px", margintop: "40px", float: "left"}} className="p-col-12 p-md-4">
                             <h3>Hora de Solicitud</h3>
                             <Calendar value={this.state.date9} onChange={(e) => this.setState({date9: e.value})} timeOnly={true} hourFormat="12" />
-                        </div>  
+                        </div>   */}
                 
-                        <div style={{padding: "10px", marginLeft: "50px", margintop: "30px", float: "left"}}>
+                        {/* <div style={{padding: "10px", marginLeft: "50px", margintop: "30px", float: "left"}}>
                         <h3>Codigo de Equipo</h3>
                         <span className="p-float-label">
                             <InputText id="float-input" type="text" size="30" value={this.state.value3} onChange={(e) => this.setState({value3: e.target.value})} />
                             <label htmlFor="float-input">Codigo</label>
-                        </span></div>
+                        </span></div> */}
                         
-                        <div style={{padding: "10px", marginLeft: "30px", margintop: "20px", float: "left"}}>
+                        <div style={{padding: "10px", marginLeft: "40px", margintop: "20px", float: "left"}}>
                         <h3>Tipo de Falla</h3>
                         <div className="p-grid" style={{width:'200px',margin:'5px'}}>
                         <div className="p-col-12">
@@ -153,15 +161,15 @@ class Orden extends React.Component {
                         </div>
                         </div>
 
-                        <div style={{padding: "10px", marginLeft: "20px", margintop: "20px", float: "left"}}>                        
+                        <div style={{padding: "10px", marginLeft: "40px", margintop: "20px", float: "left"}}>                        
                          <h3>Causa de Falla</h3>
                          <InputTextarea rows={5} cols={30} autoResize={true}></InputTextarea>
                         </div>
                     
-                        <div style={{padding: "10px", marginLeft: "30px", margintop: "20px", float: "left"}}>
+                        {/* <div style={{padding: "10px", marginLeft: "30px", margintop: "20px", float: "left"}}>
                         <h3>Descripcion del Problema</h3>
                         <InputTextarea rows={5} cols={30} autoResize={true}></InputTextarea>
-                        </div>
+                        </div> */}
                 
                         <div style={{padding: "10px", marginLeft: "50px", margintop: "20px", float: "left"}}>
                         <h3>Codigo del Trabajador</h3>
@@ -171,10 +179,10 @@ class Orden extends React.Component {
                         </span>
                         </div>
 
-                        <div style={{padding: "10px", marginLeft: "50px", margintop: "50px", float:"left", marginRight:"50px", marginBottom:"50px"}}>  
+                        <div style={{padding: "10px", marginLeft: "40px", margintop: "50px", float:"left", marginRight:"50px", marginBottom:"50px"}}>  
                          <h3>Trabajador asignado</h3>
                         <span className="p-float-label">
-                            <InputText id="float-input" type="text" size="30" value={this.state.value5} onChange={(e) => this.setState({value5: e.target.value})} />
+                            <InputText id="float-input" type="text" size="40" value={this.state.value5} onChange={(e) => this.setState({value5: e.target.value})} />
                             <label htmlFor="float-input">nombre</label>
                         </span>  
                         </div>
@@ -183,7 +191,7 @@ class Orden extends React.Component {
                         
                    </div>    
 
-                    <div style={{padding: "10px", marginLeft: "30px", margintop: "30px" , textAlign:"center"}}>
+                    <div style={{padding: "10px", marginLeft: "30px", margintop: "30px" , textAlign:"right", marginRight:"20%"}}>
                         <Button label="Guardar" icon="pi pi-check" className="p-button-success"/>
                         <Button label="Cancelar" icon="pi pi-times" className="p-button-danger"/>
                         </div>
