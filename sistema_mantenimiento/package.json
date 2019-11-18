@@ -15,7 +15,8 @@
     "react-router-dom": "^5.1.2",
     "react-schedule-calendar": "^0.22.8",
     "react-scripts": "3.2.0",
-    "react-table": "^6.10.3"
+    "react-table": "^6.10.3",
+    "sweetalert-react": "^0.4.11"
   },
   "scripts": {
     "start": "react-scripts start",
