@@ -2,7 +2,7 @@ import React from "react"
 import CalendarComponent from "../components/Calendar"
 import Topbar from '../components/Topbar'
 import Titulo from '../components/Titulo'
-import Home from '../images/casa.png'
+import Calendarioco from '../images/calendario.png'
 import "../components/styles/calendar.css"
 import eventos from "../eventos"
 
@@ -24,7 +24,7 @@ export default class Calendario extends React.Component{
         return (
             <div>
                 <Topbar />
-                <Titulo titulo="Calendario" icono={Home} />
+                <Titulo titulo="Calendario" icono={Calendarioco} />
                 <div className='container calendario'>
                     <div className='row'>
                         <CalendarComponent programacion={eventos}/>

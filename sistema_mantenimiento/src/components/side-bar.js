@@ -1,10 +1,11 @@
 import React from "react";
 import { slide as Menu } from "react-burger-menu";
 import Casa from "../images/casa.png";
-import Orden from "../images/orden.png";
-import Invent from "../images/editar.png";
+import Orden from "../images/editar.png";
+import Invent from "../images/inventario.png";
 import Humano from "../images/usuario.png";
-import Ajustes from "../images/ajustes.png";
+import Calendario from "../images/calendario.png";
+import Planificador from '../images/orden.png'
 import "./styles/sidebar.css";
 import { Link } from "react-router-dom";
 
@@ -17,7 +18,11 @@ class Sidebar extends React.Component {
         </Link>
         <hr />
         <Link className="menu-item" to="/Procedimiento">
-          <img src={Orden} /> &nbsp; Historial de Procedimientos
+          <img src={Planificador} /> &nbsp; Historial de Procedimientos
+        </Link>
+        <hr />
+        <Link className="menu-item" to="/HistorialOrden">
+          <img src={Orden} /> &nbsp; Historial de Ordenes
         </Link>
         <hr />
         <Link className="menu-item" to="/Inventario">
@@ -28,8 +33,8 @@ class Sidebar extends React.Component {
           <img src={Humano} /> &nbsp; Recurso Humano
         </Link>
         <hr />
-        <Link className="menu-item" to="#">
-          <img src={Ajustes} /> &nbsp; Ajustes
+        <Link className="menu-item" to="/Calendario">
+          <img src={Calendario} /> &nbsp; Calendarización
         </Link>
         <hr />
       </Menu>

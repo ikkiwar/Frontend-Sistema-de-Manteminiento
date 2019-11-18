@@ -3,6 +3,7 @@ import Topbar from "../components/Topbar";
 import Table from "../components/Table";
 import Titulo from "../components/Titulo";
 import Archivo from "../images/archivo.png";
+import Proce from "../images/portapapeles.png";
 
 class Procedimiento extends React.Component {
   render() {
@@ -71,7 +72,7 @@ class Procedimiento extends React.Component {
           entidad="/procedimientoporequipo"
           columnas={columnas}
           title="Procedimientos"
-          icono={Archivo}
+          icono={Proce}
           titulo="Agregar Nuevo"
           enlace="#"
         />
