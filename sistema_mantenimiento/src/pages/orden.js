@@ -11,12 +11,14 @@ import {Button} from 'primereact/button';
 
 
 
+
+
 class Orden extends React.Component {
      
     //constructor para los imput text
     constructor() {
         super();
-        this.state = {
+        this.state1 = {
             value: null
         };
     //constructor de tipo de falla    
@@ -109,7 +111,7 @@ class Orden extends React.Component {
                         <div style={{padding: "10px", marginLeft: "50px", margintop: "40px", float: "left"}}>
                         <h3>Codigo de Solicitud</h3>
                         <span className="p-float-label">
-                            <InputText id="float-input" type="text" keyfilter="pint" value={this.state.value3} onChange={(e) => this.setState({value3: e.target.value})} />
+                            <InputText id="float-input" type="text" keyfilter="pint" value={this.state.value1} onChange={(e) => this.setState({value1: e.target.value})} />
                             <label htmlFor="float-input">id solitud</label>
                         </span></div>
 
@@ -133,7 +135,7 @@ class Orden extends React.Component {
                         <div style={{padding: "10px", marginLeft: "50px", margintop: "30px", float: "left"}}>
                         <h3>Codigo de Equipo</h3>
                         <span className="p-float-label">
-                            <InputText id="float-input" type="text" size="30" value={this.state.value2} onChange={(e) => this.setState({value2: e.target.value})} />
+                            <InputText id="float-input" type="text" size="30" value={this.state.value3} onChange={(e) => this.setState({value3: e.target.value})} />
                             <label htmlFor="float-input">Codigo</label>
                         </span></div>
                         
@@ -164,26 +166,27 @@ class Orden extends React.Component {
                         <div style={{padding: "10px", marginLeft: "50px", margintop: "20px", float: "left"}}>
                         <h3>Codigo del Trabajador</h3>
                         <span className="p-float-label">
-                            <InputText id="float-input" type="text" keyfilter="pint" value={this.state.value3} onChange={(e) => this.setState({value3: e.target.value})} />
+                            <InputText id="float-input" type="text" keyfilter="pint" value={this.state.value4} onChange={(e) => this.setState({value4: e.target.value})} />
                             <label htmlFor="float-input">id Trabajador</label>
                         </span>
                         </div>
 
-                        <div style={{padding: "10px", marginLeft: "50px", margintop: "50px", float:"left", marginRight:"50px"}}>  
+                        <div style={{padding: "10px", marginLeft: "50px", margintop: "50px", float:"left", marginRight:"50px", marginBottom:"50px"}}>  
                          <h3>Trabajador asignado</h3>
                         <span className="p-float-label">
-                            <InputText id="float-input" type="text" size="30" value={this.state.value2} onChange={(e) => this.setState({value2: e.target.value})} />
+                            <InputText id="float-input" type="text" size="30" value={this.state.value5} onChange={(e) => this.setState({value5: e.target.value})} />
                             <label htmlFor="float-input">nombre</label>
                         </span>  
                         </div>
                         
                         
-                        <div style={{float:"right", padding: "10px", marginLeft: "30px", margintop: "30px" , textAlign:"end"}}>
+                        
+                   </div>    
+
+                    <div style={{padding: "10px", marginLeft: "30px", margintop: "30px" , textAlign:"center"}}>
                         <Button label="Guardar" icon="pi pi-check" className="p-button-success"/>
                         <Button label="Cancelar" icon="pi pi-times" className="p-button-danger"/>
-                    
                         </div>
-                   </div>     
             </div>
            
                 
