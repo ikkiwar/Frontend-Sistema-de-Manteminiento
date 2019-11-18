@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import 'react-big-calendar/lib/css/react-big-calendar.css'
-import { Calendar, momentLocalizer } from 'react-big-calendar'
+import 'react-big-calendar/lib/css/react-big-calendar.css';
+import { Calendar, momentLocalizer } from 'react-big-calendar';
 import "../../node_modules/sweetalert/dist/sweetalert.css";
-import SweetAlert from 'sweetalert-react'
+import SweetAlert from 'sweetalert-react';
 import moment from "moment";
 
 require("moment/locale/es.js");

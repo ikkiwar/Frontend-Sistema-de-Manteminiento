@@ -8,6 +8,7 @@ import Recurso from "../pages/RecursoHumano";
 import Calendario from "../pages/Calendario";
 import NuevoRecurso from "../pages/NuevoRecurso";
 import Procedimiento from "../pages/Procedimientos";
+import HistorialOrden from "../pages/OrdenesTrabajo";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/Calendario" component={Calendario} />
         <Route exact path="/NuevoRecurso" component={NuevoRecurso} />
         <Route exact path="/Procedimiento" component={Procedimiento} />
+        <Route exact path= "/HistorialOrden" component={HistorialOrden}/>
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>

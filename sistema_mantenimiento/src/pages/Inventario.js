@@ -2,6 +2,8 @@ import React from "react";
 import Topbar from "../components/Topbar";
 import Table from "../components/Table";
 import Titulo from "../components/Titulo";
+import Invent from "../images/inventario.png";
+import Item from "../images/item.png";
 
 class Inventario extends React.Component {
   render() {
@@ -56,11 +58,14 @@ class Inventario extends React.Component {
     return (
       <div>
         <Topbar />
-        <Titulo titulo="Inventario" />
+        <Titulo titulo="Inventario" icono={Invent}/>
         <Table
           title="Inventario"
           entidad="/materialesinsumos"
           columnas={columnas}
+          icono={Item}
+          titulo="Agregar Item"
+          enlace="#"
         />
       </div>
     );
